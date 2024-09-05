@@ -38,3 +38,4 @@ Kode Dart dapat dijalankan dalam dua mode utama:
     - Equality and Relational Operators: == membandingkan isi, bukan referensi memori, dan tidak memerlukan operator === seperti di JavaScript.
     - Logical Operators: Mendukung operasi logika dengan &&, ||, dan !.
 
+4. Link PPT : https://www.canva.com/design/DAGP36QQOlo/g1TYOjMP6yNyPE2XKD7Qvw/edit?utm_content=DAGP36QQOlo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
