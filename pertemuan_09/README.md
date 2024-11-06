@@ -141,8 +141,8 @@ class DisplayPictureScreen extends StatelessWidget {
 ```
 ### Hasil
 <!-- ![Output](./assets/1.3.JPG) -->
-<img src="./assets/1.3.JPG" alt="Output">
-<img src="./assets/1.4.JPG" alt="Output">
+<img src="./assets/1.3.jpg" alt="Output">
+<img src="./assets/1.4.jpg" alt="Output">
 <!-- ![Output](./assets/1.4.JPG) -->
 
 ## Praktikum 2
@@ -914,8 +914,8 @@ class CarouselFlowDelegate extends FlowDelegate {
 }
 ```
 - Hasil
-<img src="./assets/tgs1.JPG" alt="Output">
-<img src="./assets/tgs2.JPG" alt="Output">
+<img src="./assets/tgs1.jpg" alt="Output">
+<img src="./assets/tgs2.jpg" alt="Output">
 <!-- ![Output](./assets/tgs1.JPG)
 ![Output](./assets/tgs2.JPG) -->
 
