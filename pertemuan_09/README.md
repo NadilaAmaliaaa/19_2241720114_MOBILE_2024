@@ -140,8 +140,10 @@ class DisplayPictureScreen extends StatelessWidget {
 }
 ```
 ### Hasil
-![Output](./assets/1.3.JPG)
-![Output](./assets/1.4.JPG)
+<!-- ![Output](./assets/1.3.JPG) -->
+<img src="./assets/1.3.JPG" alt="Output">
+<img src="./assets/1.4.JPG" alt="Output">
+<!-- ![Output](./assets/1.4.JPG) -->
 
 ## Praktikum 2
 ### Langkah 2: Buat widget Selector ring dan dark gradient
@@ -912,8 +914,10 @@ class CarouselFlowDelegate extends FlowDelegate {
 }
 ```
 - Hasil
-![Output](./assets/tgs1.JPG)
-![Output](./assets/tgs2.JPG)
+<img src="./assets/tgs1.JPG" alt="Output">
+<img src="./assets/tgs2.JPG" alt="Output">
+<!-- ![Output](./assets/tgs1.JPG)
+![Output](./assets/tgs2.JPG) -->
 
 3. Jelaskan maksud void async pada praktikum 1?
 - Kata kunci void digunakan untuk mendeklarasikan bahwa suatu fungsi tidak mengembalikan nilai apa pun. Artinya, fungsi tersebut menjalankan sejumlah instruksi tetapi tidak mengembalikan hasil atau nilai kembali (return value). async adalah kata kunci yang menandakan bahwa fungsi tersebut bersifat asinkron atau non-blok. Fungsi async memungkinkan kode untuk menjalankan proses tertentu (seperti mengakses data dari server) tanpa menghentikan eksekusi kode berikutnya. Dengan cara ini, operasi yang memakan waktu lama tidak menghambat alur eksekusi. ika kita mendeklarasikan sebuah fungsi sebagai void async, ini berarti fungsi tersebut tidak akan mengembalikan nilai tetapi menjalankan operasi asinkron di dalamnya. Ini sering digunakan pada fungsi yang menjalankan proses asinkron tanpa mengharuskan hasil kembali.
