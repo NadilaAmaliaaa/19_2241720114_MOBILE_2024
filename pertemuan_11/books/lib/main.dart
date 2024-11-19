@@ -34,6 +34,11 @@ class FuturePage extends StatefulWidget {
 
 class _FuturePageState extends State<FuturePage> {
   void returnFG(){
+    // final futures = Future.wait<int>([
+    //   returnOneAsync(),
+    //   returnTwoAsync(),
+    //   returnThreeAsync(),
+    // ]);
     FutureGroup<int> futureGroup = FutureGroup<int>();
     futureGroup.add(returnOneAsync());
     futureGroup.add(returnTwoAsync());
