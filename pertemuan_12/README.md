@@ -90,4 +90,40 @@ numberStream.addError();
 ```
 - Kode ini menangani kesalahan yang terjadi pada stream. Jika terjadi kesalahan dalam stream, fungsi yang diberikan kepada onError akan dipanggil dengan objek kesalahan (error). Dalam kasus ini, saat terjadi kesalahan, setState digunakan untuk memperbarui nilai lastNumber menjadi -1, mungkin untuk memberi tahu antarmuka pengguna bahwa terjadi kesalahan. Selanjutnya, numberStream.addError(); dipanggil, yang kemungkinan menambahkan kesalahan ke dalam stream numberStream. Namun, perlu diingat bahwa di dalam potongan kode yang diberikan, addError tidak menerima parameter, sehingga cara ini mungkin tidak sesuai dengan implementasi sebelumnya. Kemungkinan, seharusnya ada parameter atau nilai tertentu yang ditambahkan ke dalam stream untuk menandakan jenis kesalahan tertentu.
 
+## Praktikum 3
+### Soal 8
+![Output](./assets/8.gif)
+- Kode Langkah 1-3 mengimplementasikan transformasi stream pada aplikasi Flutter. Ini menggunakan StreamTransformer untuk mengalikan nilai integer dalam stream dengan 10. Hasil transformasi dan penanganan kesalahan diterapkan, dan hasilnya diperbarui dalam state lastNumber untuk pembaruan antarmuka pengguna.
 
+## Praktikum 4
+### Soal 9
+![Output](./assets/9.1.PNG)
+![Output](./assets/9.2.PNG)
+1. Langkah 2
+- Membuat subscription untuk memantau perubahan pada suatu stream.
+- Ketika ada perubahan, nilai stream digunakan untuk memperbarui state lastNumber dan kemungkinan memperbarui antarmuka pengguna.
+2. Langkah 6
+- Membatalkan pemantauan terhadap stream jika tidak lagi diperlukan.
+3. Langkah 8
+- Menggunakan StreamController untuk mengirim data acak ke dalam stream.
+- Menangani situasi di mana stream sudah ditutup dengan mengubah state lastNumber menjadi -1.
+
+## Praktikum 5
+### Soal 10
+![Output](./assets/10.PNG)
+- Terjadi Error karena ada kode 2 listener.
+
+### Soal 11
+![Output](./assets/11.gif)
+- Karena pada saat Set broadcast stream, akan memanggil 2 listener yang akan mengembalikan nilai yang sama. Karena itu pada tampilan akan mengeluarkan 2 nilai yang sama.
+
+## Praktikum 6
+### Soal 12
+![Output](./assets/12.gif)
+- Langkah 3: digunakan untuk membuat stream yang mengenerate random number.
+- Langkah 7: digunakan untuk mengimplimentasikan stream menggunakan StreamBuilder. Jika stream mendapatkan data maka akan menampilkan Text dengan nilai snapshot.data dan jika terjadi error maka akan melakukan log.
+
+## Praktikum 7
+### Soal 13
+![Output](./assets/13.gif)
+- Praktikum ini menjelaskan cara menggunakan pola BLoC pada Flutter untuk membuat aplikasi yang lebih terorganisir dan mudah dirawat. Pola BLoC memisahkan logika bisnis dari tampilan, sehingga memudahkan pengembangan dan pemeliharaan aplikasi. Dalam praktikum ini, pola BLoC digunakan untuk menghasilkan nomor acak. Kelas RandomBloc bertanggung jawab untuk menghasilkan aliran data untuk nomor acak. Kelas RandomScreen bertanggung jawab untuk menampilkan nomor acak tersebut. Tombol refresh pada kelas RandomScreen digunakan untuk menghasilkan nomor acak baru. Tombol ini mentrigger fungsi generateRandom() pada kelas RandomBloc. Secara keseluruhan, praktikum ini menunjukkan cara menggunakan pola BLoC untuk membuat aplikasi Flutter yang lebih terorganisir.
